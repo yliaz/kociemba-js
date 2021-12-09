@@ -30,7 +30,8 @@ cd emsdk
 source ./emsdk_env.sh # 激活环境变量，可以写到zshrc里
 ```
 
-![image-20211209213706347](https://zhuye-1308301598.file.myqcloud.com/markdown/image-20211209213706347.png)
+![image](https://user-images.githubusercontent.com/38151581/145449959-d24b2e5f-7af3-4a5f-bf1b-4a8f5b2b493e.png)
+
 
 ### 3. 查看是否安装成功
 
