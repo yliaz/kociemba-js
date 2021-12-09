@@ -89,6 +89,19 @@ ls
 
 2. 增加 `solve` 方法，以供 JS 调用
 
+```c
+char * solve(char *rubik) {
+    char *sol = solution(
+                          rubik,
+                          24,
+                          1000,
+                          0,
+                          "cache"
+                          );
+    return sol;
+}
+```
+
 ### 使用 Emscripten 将 C 转为 JS
 
 ```shell
