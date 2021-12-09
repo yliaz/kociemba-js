@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button class="mybutton">运行 Kociemba 算法测试</button>
+    <script>
+        Module = {}
+        Module.onRuntimeInitialized = function () {
+            document.querySelector('.mybutton').addEventListener('click', function(){
+                console.log('--- START ---');
+                const rubik = "DRLUUBFBRBLURRLRUBLRDDFDLFUFUFFDBRDUBRUFLLFDDBFLUBLRBD"
+                console.log(`Input: ${rubik}`)
+                const ptr = allocate(intArrayFromString(rubik), ALLOC_NORMAL)
+                const result = Module._solve(ptr); // arguments
+                console.log(Module.UTF8ToString(result))
+            });
+        }
+    </script>
+    <script src="./kociemba.js">
+</script>
+</body>
+</html>
