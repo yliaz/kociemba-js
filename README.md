@@ -1,6 +1,4 @@
----
-title: 前端使用 WebAssembly 运行 Kociemba 算法
----
+# 前端使用 WebAssembly 运行 Kociemba 算法
 
 为了完成魔方自动复原的操作，我们需要一个算法来帮助我们以较少的步骤，完成复原过程，这里选择了 [Kociemba 算法](https://github.com/muodov/kociemba)，也叫二阶段算法。
 
