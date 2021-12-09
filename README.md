@@ -83,11 +83,11 @@ ls
 
 我们需要按照我们的需要对源文件进行一些微调
 
-1. 将头文件全部移出到和 `.c` 文件相同的文件夹内。
+1. 将 `.h` 头文件全部移出到和 `.c` 文件相同的文件夹内。
 
-![image-20211209215129422](https://zhuye-1308301598.file.myqcloud.com/markdown/image-20211209215129422.png)
+![image-20211210015140348](https://zhuye-1308301598.file.myqcloud.com/markdown/image-20211210015140348.png)
 
-2. 增加 `solve` 方法，以供 JS 调用
+2. 在 `solve.c` 文件的末尾增加 `solve` 方法，以供 JS 调用
 
 ```c
 char * solve(char *rubik) {
